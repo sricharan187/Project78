@@ -1,0 +1,95 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <title>
+            Project - 78 
+        </title>
+    </head>
+    <body>
+        <h1>
+            My Family Book 
+        </h1>
+        <div class="line"></div>
+        <img src="family book.png" style="width: 30%;" id="family_member_image">
+        <h4 id="family_member_name">My Family</h4>
+        <button onclick=" update() ;" id="next">Next</button>
+        <button onclick=" prev() ;" id="prev">Previous</button>
+        <script>
+            var images = [
+                "family book.png",
+                "Sri Charan ( myself ).jpeg",
+                "Kushal.jpeg",
+                "Poornima.jpeg",
+                "Vijay.jpeg",
+                "Venkatta Krishnayya.jpeg",
+                "Padmavathi.jpeg",
+                "Ashok.jpeg",
+                "Devi.jpeg",
+                "Mithun.jpeg",
+                "Siva.jpeg",
+                "Swathi.jpeg",
+                "Bhanu.jpeg",
+                "Sudersanam.jpeg",
+                "Maheshwari.jpeg",
+                "Ram.jpeg",
+                "Sunitha.jpeg",
+                "Rohit.jpeg",
+                "Kiran.jpeg",
+                "Jhansi.jpeg",
+                "Vedishwar.jpeg",
+                "Vedish.jpeg"
+                ];
+
+                var names = [
+                "My Family",
+                "Sri Charan ( Myself )",
+                "Kushal ( My Brother )",
+                "Poornima ( My Mother )",
+                "Vijay ( My Father )",
+                "Venkatta Krishanayya ( My Grandfather )",
+                "Padmavati ( My Grandmother )",
+                "Ashok ( My Father-in-law )",
+                "Devi ( My Mother-in-law )",
+                "Mithun ( My Brother-in-law )",
+                "Siva ( My Father-in-law )",
+                "Swathi ( My Mother-in-law )",
+                "Bhanu ( My Brother-in-law )",
+                "Sudersanam ( My Grandfather )",
+                "Maheshwari ( My Grandmother )",
+                "Ram ( My Uncle )",
+                "Sunitha ( My Aunt )",
+                "Rohith ( My Cousin Brother )",
+                "Kiran ( My Uncle )",
+                "Jhansi ( My Aunt )",
+                "Vedishwar ( My Cousin Brother )",
+                "Vedish ( My Cousin Brother )"
+                ];
+                var i=0;
+                function update()
+                {
+                    i++;
+                    var number_of_family_members_in_array = 21
+                    if ( i > number_of_family_members_in_array )
+                    {
+                        i = 0;
+                    }
+                    var updatedImages = images[i];
+                    var updatedNames = names[i]; 
+                    document.getElementById("family_member_image").src = updatedImages;
+                    document.getElementById("family_member_name").innerHTML = updatedNames;
+                }
+                function prev()
+                {
+                    i--;
+                    if ( i < 0 )
+                    {
+                        i = 0;
+                    }
+                    var updatedImages = images[i];
+                    var updatedNames = names[i]; 
+                    document.getElementById("family_member_image").src = updatedImages;
+                    document.getElementById("family_member_name").innerHTML = updatedNames;
+                }
+        </script>
+     </body>
+ </html>

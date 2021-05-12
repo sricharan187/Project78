@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    background-color: yellow;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 400;
+    color: blueviolet;
+    background-color: tomato;
+}
+
+.line {
+	height: 6px;
+	background-color: black;
+	width: 150px;
+	margin: 8px auto;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+h4 {
+    color: crimson;
+}
+
+#next {
+    background-color: cyan;
+    color: darkgoldenrod;
+    margin-right: 20px;
+}
+
+#prev {
+    background-color:darkgoldenrod;
+    color: cyan;
+    margin-left: 20px;
+}
+
+#family_member_image {
+    border-radius: 5px;
+    border-color: black;
+    border-style:double;
+}
+
+#family_member_name {
+    font-size: 20px;
+}
